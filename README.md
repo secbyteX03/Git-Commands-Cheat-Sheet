@@ -86,3 +86,25 @@ graph LR
   D --> E[Rebase onto main]
   E --> F[Create Pull Request]
   F --> G[Merge to main]
+```
+## 6. Sharing & Updating Projects
+Synchronize local work with remote repositories. Essential for collaboration, code sharing, and backup.
+
+```bash
+# Add remote repository
+git remote add origin https://github.com/user/project.git
+
+# Push local branch to remote
+git push -u origin main  # First push: "Initialize remote"
+
+# Fetch changes from remote without merging
+git fetch origin
+
+# Pull latest changes and merge
+git pull origin main  # Commit: "Sync with main"
+
+# Add upstream repository for forked projects
+git remote add upstream https://github.com/original/repo.git
+git fetch upstream
+git merge upstream/main
+```
