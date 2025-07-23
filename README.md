@@ -32,13 +32,13 @@
 
 ### 🤖 Automation & Workflows
 14. [⚡ GitHub Actions & CI/CD](#14-github-actions--cicd)
-15. [🚀 Real Example Workflow](#15-real-example-workflow)
+15. [🚀 Real Example Workflow](#15-real-example-workflow-payment-feature-implementation)
 
 ### 📚 Reference & Resources
 - [🏁 Conclusion](#conclusion-mastering-git-for-professional-development)
-- [👥 Contributors](#-contributors)
-- [📜 License](#-license)
-- 
+- [👥 Author & Maintainer](#-contributors)
+- [📜 License](#-License)
+  
 --- 
 Git is a powerful distributed version control system used by developers to manage code history, collaborate on software projects, automate workflows, and maintain clean, versioned codebases. This documentation offers an in-depth guide to foundational and advanced Git commands, GUI integrations, GitHub CLI usage, workflow automation with GitHub Actions, and includes diagrams for visual learners. It is designed as a README.md for easy consumption and navigation.
 
@@ -293,13 +293,13 @@ flowchart TD
 
 Pro Tips <br>
 ▶️ Learn CLI Through GUI <br>
-Most tools show equivalent CLI commands for actions
+- Most tools show equivalent CLI commands for actions
 
 ▶️ Keyboard Navigation <br>
 
-GitKraken: Press ? for shortcut cheatsheet
+- GitKraken: Press ? for shortcut cheatsheet
 
-Sourcetree: ⌘+1 (Workspace), ⌘+2 (History)
+- Sourcetree: ⌘+1 (Workspace), ⌘+2 (History)
 
 ▶️ Customize Views
 ```bash
@@ -318,9 +318,9 @@ Sourcetree: ⌘+1 (Workspace), ⌘+2 (History)
 
 ▶️ Editor Integration
 
-VS Code: GitLens + GitHub Pull Requests
+- VS Code: GitLens + GitHub Pull Requests
 
-IntelliJ: Built-in Git (VCS menu)
+- IntelliJ: Built-in Git (VCS menu)
 
 Expert Insight: "GUI tools lower the learning curve for newcomers while providing powerful visualization for veterans. The best teams combine CLI efficiency with GUI clarity." - Linus Torvalds
 ## 12. GitHub CLI Commands
@@ -561,7 +561,7 @@ git push origin --delete payment-feature
 This workflow balances individual productivity with team coordination. The rebase-merge approach maintains linear history while preserving feature context.
 
 ---
-## 🏁 Conclusion: Mastering Git for Professional Development
+## Conclusion: Mastering Git for Professional Development
 
 This comprehensive guide has equipped you with the essential knowledge to leverage Git's full potential throughout your development workflow. From fundamental commands to advanced techniques, we've covered:
 
@@ -590,37 +590,29 @@ graph LR
 ### 💬 Final Words
 > "Git is more than a tool - it's a fundamental skill for modern software development. Mastering these concepts will transform how you build, collaborate, and deliver software. Remember that proficiency comes through practice: start small with basic commits, experiment with branching strategies, and gradually incorporate advanced workflows into your daily practice."
 
-**Contribute & Improve**: Found an error or have a suggestion?  
-[Open an Issue](https://github.com/yourusername/yourrepo/issues) • [Submit a PR](https://github.com/yourusername/yourrepo/pulls)
+---
 
+## Author & Maintainer
 
-
-## 👥 Contributors
-
-<a href="https://github.com/secbyteX03">
-  <img src="https://avatars.githubusercontent.com/u/166341753?v=4" alt="Contributors">
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
-
-Special thanks to:
-- [Magret Faith](https://github.com/MagretFaith) - Project maintainer
+<div align="center" style="margin-top: 20px;">
+  <a href="https://github.com/secbyteX03">
+    <img src="https://contrib.rocks/image?repo=secbyteX03/secbyteX03" 
+         alt="Project contributions"
+         style="border-radius: 10px; border: 1px solid #ddd; padding: 10px; background: #f8f9fa;">
+  </a>
+  <br>
+  <strong>secbyteX03</strong>
+  <p>Documentation Author</p>
+  
+  [![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?logo=github)](https://github.com/secbyteX03)
+</div>
 
 ---
 
-## 📜 License 
+## License 
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![GitHub](https://img.shields.io/github/license/yourusername/yourrepository)](https://github.com/yourusername/yourrepository/blob/main/LICENSE)
 
-This documentation and all code samples are licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This Git commands reference is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Permissions include:
-- Commercial use
-- Modification
-- Distribution
-- Private use
-
-Limitations:
-- Liability
-- Warranty
+Permission is granted to freely use, modify, and distribute this documentation.
