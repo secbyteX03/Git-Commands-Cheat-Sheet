@@ -6,8 +6,7 @@ Git is a powerful distributed version control system used by developers to manag
 
 ---
 ## 1. Setup & Configuration
-Before diving in, configure your identity and editor preferences.<br>
-These commands Sets global user.name and user.email, plus useful defaults.
+Configure your Git identity, default editor, and preferences before starting any project. Essential for attributing work correctly and personalizing your environment.
 
 ```bash
 # Set identity (First commit)
@@ -23,12 +22,25 @@ git config --global color.ui auto
 ## 2. Repository Initialization
 #### Create or clone a repository.
 
-Using these commands you can start tracking a folder, or clone an existing remote.
-
+Create a new repository or clone an existing one. Initialization sets up Git tracking in your project directory, while cloning copies a remote repository including its history.
 ```bash
 # Initialize new repo
 git init  # Initial commit
 
 # Clone existing repo
 git clone https://github.com/user/repo.git  # Clones with origin remote
+```
+## 3. Staging & Committing Changes
+#### Track changes and create commits
+Track file changes through staging (git add) and create permanent snapshots with commits. Commits should be atomic and include descriptive messages for clear history.
+```bash
+# Check current status
+ git status
+# Stage changes
+git add file.txt # single
+file git add . # all changes
+# Commit staged snapshot
+git commit -m "Describe change"
+# Amend last commit (message or content)
+git commit --amend -m "Updated message"
 ```
