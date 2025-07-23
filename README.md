@@ -108,3 +108,36 @@ git remote add upstream https://github.com/original/repo.git
 git fetch upstream
 git merge upstream/main
 ```
+## 7. Undoing Changes
+Correct mistakes in staging area or working directory. Revert commits safely or reset history when necessary.
+
+``` bash
+# Unstage file without losing changes
+git reset HEAD config.yml  # After accidental add
+
+# Discard local changes to file
+git checkout -- broken-file.js
+
+# Create new commit that reverses previous commit
+git revert c1a2b3d -m "Revert experimental feature"
+
+# Reset branch to specific commit (use with caution!)
+git reset --hard ab12cd3  # Commit: "Hard reset to stable version"
+
+```
+## 8. Viewing History
+Inspect commit history, compare changes, and track file evolution. Essential for debugging and understanding project evolution.
+
+``` bash
+# Show compact commit history with graph
+git log --oneline --graph --decorate --all
+
+# View changes in specific commit
+git show ab12cd3
+
+# See line-by-line file history
+git blame README.md
+
+# Compare differences between branches
+git diff feature..main
+```
