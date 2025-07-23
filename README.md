@@ -6,7 +6,7 @@ Git is a powerful distributed version control system used by developers to manag
 
 ---
 ## 1. Setup & Configuration
-Before diving in, configure your identity and editor preferences.
+Before diving in, configure your identity and editor preferences.<br>
 These commands Sets global user.name and user.email, plus useful defaults.
 
 ```bash
@@ -19,3 +19,16 @@ git config --global core.editor "code --wait"
 
 # Enable color output
 git config --global color.ui auto
+```
+## 2. Repository Initialization
+#### Create or clone a repository.
+
+Using these commands you can start tracking a folder, or clone an existing remote.
+
+```bash
+# Initialize new repo
+git init  # Initial commit
+
+# Clone existing repo
+git clone https://github.com/user/repo.git  # Clones with origin remote
+```
