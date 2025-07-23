@@ -328,3 +328,38 @@ git bisect good v1.0   # Last known good version
 #!/bin/sh
 npm test || exit 1
 ```
+## 14. GitHub Actions & CI/CD
+Automate testing, building, and deployment workflows. Runs on GitHub's infrastructure triggered by repository events.
+
+Sample CI Pipeline (.github/workflows/ci.yml):
+
+```yaml
+name: Continuous Integration
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run tests
+      run: npm test
+      
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - uses: actions/checkout@v3
+    - run: ./deploy.sh
+```
