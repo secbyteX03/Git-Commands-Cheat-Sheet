@@ -44,3 +44,19 @@ git commit -m "Describe change"
 # Amend last commit (message or content)
 git commit --amend -m "Updated message"
 ```
+## 4. Branching
+Create isolated environments for features, experiments, or bug fixes. Branches prevent conflicts in main codebase and enable parallel development.
+
+```bash
+# Create and switch to new feature branch
+git checkout -b auth-feature  # Branch creation commit
+
+# List all local branches (asterisk shows current)
+git branch
+
+# Switch between branches
+git checkout main  # Switch to primary branch
+
+# Delete merged branch (cleanup after completion)
+git branch -d old-feature  # Cleanup commit
+```
