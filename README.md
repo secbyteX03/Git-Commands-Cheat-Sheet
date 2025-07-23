@@ -307,3 +307,24 @@ gh pr merge 123 --squash -m "Implement user API"
 # View open pull requests
 gh pr list
 ```
+## 13. Advanced Techniques
+Professional workflows for complex scenarios including selective commits, history rewriting, and debugging.
+
+``` bash
+# Cherry-pick specific commit to current branch
+git cherry-pick d4e5f6a  # Commit: "Apply security patch"
+
+# Interactive rebase (last 4 commits)
+git rebase -i HEAD~4
+# Options: squash, reword, edit, drop
+
+# Binary search to find bug introduction
+git bisect start
+git bisect bad         # Current version has bug
+git bisect good v1.0   # Last known good version
+# Test and mark commits until found
+
+# Custom pre-commit hook (run tests)
+#!/bin/sh
+npm test || exit 1
+```
