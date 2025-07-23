@@ -60,3 +60,29 @@ git checkout main  # Switch to primary branch
 # Delete merged branch (cleanup after completion)
 git branch -d old-feature  # Cleanup commit
 ```
+## 5. Merging & Rebasing
+Integrate changes between branches. Merging preserves history as-is, while rebasing creates linear history by replaying commits.
+
+```bash
+# Merge feature branch into main
+git checkout main
+git merge auth-feature -m "Integrate authentication system"
+
+# Rebase feature branch onto latest main
+git checkout auth-feature
+git rebase main  # Commit: "Rebase auth feature"
+
+# Resolve conflicts during rebase/merge
+git mergetool  # Use configured diff tool
+
+```
+### Visual Workflow Diagram
+
+```mermaid
+graph LR
+  A[main] --> B[Create Feature Branch]
+  B --> C[Develop Features]
+  C --> D[Test & Commit]
+  D --> E[Rebase onto main]
+  E --> F[Create Pull Request]
+  F --> G[Merge to main]
