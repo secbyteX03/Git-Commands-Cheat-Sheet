@@ -285,3 +285,25 @@ VS Code: GitLens + GitHub Pull Requests
 IntelliJ: Built-in Git (VCS menu)
 
 Expert Insight: "GUI tools lower the learning curve for newcomers while providing powerful visualization for veterans. The best teams combine CLI efficiency with GUI clarity." - Linus Torvalds
+## 12. GitHub CLI Commands
+Manage GitHub repositories and workflows directly from terminal. Streamlines issue tracking, PR management, and repository operations.
+
+```bash
+# Authenticate with GitHub
+gh auth login
+
+# Create new repository
+gh repo create new-project --public --clone
+
+# Create issue with labels
+gh issue create --title "Bug: Login Failure" --body "Steps to reproduce..." --label "bug"
+
+# Create pull request
+gh pr create --base main --head feature-x --title "New API endpoints" --body "Implements user management"
+
+# Merge pull request with squash
+gh pr merge 123 --squash -m "Implement user API"
+
+# View open pull requests
+gh pr list
+```
