@@ -368,11 +368,19 @@ jobs:
 This end-to-end workflow demonstrates professional Git practices from project initialization to production release. We will implement a payment feature using branch isolation, rebase synchronization, explicit merge commits, and semantic versioning.
 
 ### Workflow Overview
+1. **Initialize Project** → Create local repository  
+2. **GitHub Setup** → Connect to remote  
+3. **Feature Branch** → Develop in isolation  
+4. **Sync with Main** → Rebase to update  
+5. **Merge Feature** → Integrate with main  
+6. **Release** → Tag and publish
+   
+### Visual Workflow
 ```mermaid
-flowchart LR
-  A[1. Initialize Project] --> B[2. GitHub Setup]
-  B --> C[3. Feature Branch]
-  C --> D[4. Sync with Main]
-  D --> E[5. Merge Feature]
-  E --> F[6. Release]
+graph TD
+    A[Initialize Project] --> B[GitHub Setup]
+    B --> C[Feature Branch]
+    C --> D[Sync with Main]
+    D --> E[Merge Feature]
+    E --> F[Release]
 ```
