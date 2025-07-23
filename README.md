@@ -141,3 +141,23 @@ git blame README.md
 # Compare differences between branches
 git diff feature..main
 ```
+## 9. Stashing
+Temporarily shelve uncommitted changes to switch contexts. Ideal when you need to quickly jump between tasks without committing WIP.
+
+``` bash
+# Stash current changes with message
+git stash push -m "WIP: search implementation"
+
+# List available stashes
+git stash list
+
+# Apply most recent stash and keep in stack
+git stash apply
+
+# Apply specific stash and remove from stack
+git stash pop stash@{1}
+
+# Clear stash entries
+git stash drop stash@{0}
+
+```
