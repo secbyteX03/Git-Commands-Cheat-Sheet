@@ -161,3 +161,19 @@ git stash pop stash@{1}
 git stash drop stash@{0}
 
 ```
+## 10. Tagging
+Mark specific points in history as important (typically releases). Annotated tags store extra metadata and are recommended for versioning.
+
+``` bash
+# Create lightweight tag
+git tag v1.2.0-beta
+
+# Create annotated tag with message
+git tag -a v1.2.0 -m "Production release 2023"
+
+# Push tags to remote repository
+git push origin --tags  # Share tags with team
+
+# List all tags
+git tag -l
+```
