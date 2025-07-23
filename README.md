@@ -363,3 +363,16 @@ jobs:
     - uses: actions/checkout@v3
     - run: ./deploy.sh
 ```
+## 15. Real Example Workflow: Payment Feature Implementation
+
+This end-to-end workflow demonstrates professional Git practices from project initialization to production release. We will implement a payment feature using branch isolation, rebase synchronization, explicit merge commits, and semantic versioning.
+
+### Workflow Overview
+```mermaid
+flowchart LR
+  A[1. Initialize Project] --> B[2. GitHub Setup]
+  B --> C[3. Feature Branch]
+  C --> D[4. Sync with Main]
+  D --> E[5. Merge Feature]
+  E --> F[6. Release]
+```
